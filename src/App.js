@@ -3,11 +3,11 @@ import { useState, useContext, useEffect } from "react";
 import CalendarHeader from "./components/CalendarHeader";
 import CalendarMonth from "./components/CalendarMonth";
 import CalendarSideBar from "./components/CalendarSideBar";
+import EventModal from "./commonComponents/EventModal";
 
 import GlobalContext from "./context/GlobalContext";
 
 import { getMonth } from "./utils";
-import EventModal from "./commonComponents/EventModal";
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth())
